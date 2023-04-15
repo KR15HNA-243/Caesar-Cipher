@@ -11,11 +11,11 @@ int main()
     scanf("%d",&k); //positions to be shifted by
     for(i=0;i<len+1;i++){
         if(((str[i]<91)&&(str[i]>64))||((str[i]<123)&&(str[i]>96))){
-            str[i]=str[i]+k;
+            str[i]=str[i]+k; //shift every letter by k positions
         }
     }
     for(i=0;i<len+1;i++){
-        printf("%c",str[i]);
+        printf("%c",str[i]); //print the encrypted string
     }
     
  
